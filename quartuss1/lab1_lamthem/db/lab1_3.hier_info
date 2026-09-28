@@ -1,0 +1,55 @@
+|Block10
+Y2 <= lab1_3:inst.Y2
+S => lab1_3:inst.S
+Load => lab1_3:inst.Load
+I2 => lab1_3:inst.I2
+I1 => lab1_3:inst.I1
+I0 => lab1_3:inst.I0
+CLK => lab1_3:inst.CLK
+Y1 <= lab1_3:inst.Y1
+Y0 <= lab1_3:inst.Y0
+
+
+|Block10|lab1_3:inst
+Y1 <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+CLK => lol.CLK
+CLK => inst2.CLK
+CLK => inst1.CLK
+Load => LAB2:inst5.S
+Load => LAB2:inst4.S
+Load => LAB2:inst3.S
+S => inst14.IN0
+S => inst.IN0
+S => inst22.IN3
+S => inst20.IN0
+I1 => LAB2:inst3.B
+I0 => LAB2:inst4.B
+I2 => LAB2:inst5.B
+Y0 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block10|lab1_3:inst|LAB2:inst5
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst2.IN0
+S => inst.IN0
+B => inst2.IN1
+A => inst1.IN1
+
+
+|Block10|lab1_3:inst|LAB2:inst4
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst2.IN0
+S => inst.IN0
+B => inst2.IN1
+A => inst1.IN1
+
+
+|Block10|lab1_3:inst|LAB2:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst2.IN0
+S => inst.IN0
+B => inst2.IN1
+A => inst1.IN1
+
+

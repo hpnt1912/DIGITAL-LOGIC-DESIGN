@@ -1,0 +1,27 @@
+|Block4
+Y2 <= Lab1:inst.Y2
+I2 => Lab1:inst.I2
+I1 => Lab1:inst.I1
+I0 => Lab1:inst.I0
+CLK => Lab1:inst.CLK
+PL => Lab1:inst.PL
+Y1 <= Lab1:inst.Y1
+Y0 <= Lab1:inst.Y0
+
+
+|Block4|Lab1:inst
+Y2 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+PL => inst12.IN0
+I1 => inst1.IN0
+I1 => inst6.IN0
+CLK => inst3.CLK
+CLK => inst5.CLK
+CLK => inst4.CLK
+I2 => inst.IN0
+I2 => inst7.IN0
+I0 => inst2.IN0
+I0 => inst9.IN0
+Y1 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Y0 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
