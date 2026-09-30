@@ -1,0 +1,226 @@
+Simulator report for lab1_haha
+Tue Sep 29 07:57:04 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 52 nodes     ;
+; Simulation Coverage         ;      75.00 % ;
+; Total Number of Transitions ; 605          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                    ;               ;
+; Vector input source                                                                        ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/quartuss1/lab1_4/Waveform5.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.00 % ;
+; Total nodes checked                                 ; 52           ;
+; Total output ports checked                          ; 52           ;
+; Total output ports with complete 1/0-value coverage ; 39           ;
+; Total output ports with no 1/0-value coverage       ; 11           ;
+; Total output ports with no 1-value coverage         ; 11           ;
+; Total output ports with no 0-value coverage         ; 13           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |lab1_haha|Y2               ; |lab1_haha|Y2               ; pin_out          ;
+; |lab1_haha|inst47           ; |lab1_haha|inst47           ; out0             ;
+; |lab1_haha|inst1            ; |lab1_haha|inst1            ; regout           ;
+; |lab1_haha|inst25           ; |lab1_haha|inst25           ; out0             ;
+; |lab1_haha|inst22           ; |lab1_haha|inst22           ; out0             ;
+; |lab1_haha|I1               ; |lab1_haha|I1               ; out              ;
+; |lab1_haha|CLK              ; |lab1_haha|CLK              ; out              ;
+; |lab1_haha|inst40           ; |lab1_haha|inst40           ; out0             ;
+; |lab1_haha|inst39           ; |lab1_haha|inst39           ; out0             ;
+; |lab1_haha|inst38           ; |lab1_haha|inst38           ; out0             ;
+; |lab1_haha|inst2            ; |lab1_haha|inst2            ; regout           ;
+; |lab1_haha|inst24           ; |lab1_haha|inst24           ; out0             ;
+; |lab1_haha|inst23           ; |lab1_haha|inst23           ; out0             ;
+; |lab1_haha|I0               ; |lab1_haha|I0               ; out              ;
+; |lab1_haha|inst45           ; |lab1_haha|inst45           ; out0             ;
+; |lab1_haha|inst43           ; |lab1_haha|inst43           ; out0             ;
+; |lab1_haha|inst42           ; |lab1_haha|inst42           ; out0             ;
+; |lab1_haha|inst             ; |lab1_haha|inst             ; regout           ;
+; |lab1_haha|inst26           ; |lab1_haha|inst26           ; out0             ;
+; |lab1_haha|inst21           ; |lab1_haha|inst21           ; out0             ;
+; |lab1_haha|I2               ; |lab1_haha|I2               ; out              ;
+; |lab1_haha|inst35           ; |lab1_haha|inst35           ; out0             ;
+; |lab1_haha|inst34           ; |lab1_haha|inst34           ; out0             ;
+; |lab1_haha|inst33           ; |lab1_haha|inst33           ; out0             ;
+; |lab1_haha|inst46           ; |lab1_haha|inst46           ; out0             ;
+; |lab1_haha|inst50           ; |lab1_haha|inst50           ; out0             ;
+; |lab1_haha|inst49           ; |lab1_haha|inst49           ; out0             ;
+; |lab1_haha|inst51           ; |lab1_haha|inst51           ; out0             ;
+; |lab1_haha|inst37           ; |lab1_haha|inst37           ; out0             ;
+; |lab1_haha|inst48           ; |lab1_haha|inst48           ; out0             ;
+; |lab1_haha|inst52           ; |lab1_haha|inst52           ; out0             ;
+; |lab1_haha|Y1               ; |lab1_haha|Y1               ; pin_out          ;
+; |lab1_haha|lol              ; |lab1_haha|lol              ; out0             ;
+; |lab1_haha|pp               ; |lab1_haha|pp               ; out0             ;
+; |lab1_haha|ko               ; |lab1_haha|ko               ; out0             ;
+; |lab1_haha|kaka             ; |lab1_haha|kaka             ; out0             ;
+; |lab1_haha|Y0               ; |lab1_haha|Y0               ; pin_out          ;
+; |lab1_haha|LAB2:inst5|inst3 ; |lab1_haha|LAB2:inst5|inst3 ; out0             ;
+; |lab1_haha|LAB2:inst5|inst1 ; |lab1_haha|LAB2:inst5|inst1 ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |lab1_haha|inst20           ; |lab1_haha|inst20           ; out0             ;
+; |lab1_haha|S1               ; |lab1_haha|S1               ; out              ;
+; |lab1_haha|inst44           ; |lab1_haha|inst44           ; out0             ;
+; |lab1_haha|inst41           ; |lab1_haha|inst41           ; out0             ;
+; |lab1_haha|LAB2:inst3|inst3 ; |lab1_haha|LAB2:inst3|inst3 ; out0             ;
+; |lab1_haha|LAB2:inst3|inst2 ; |lab1_haha|LAB2:inst3|inst2 ; out0             ;
+; |lab1_haha|LAB2:inst3|inst1 ; |lab1_haha|LAB2:inst3|inst1 ; out0             ;
+; |lab1_haha|LAB2:inst5|inst2 ; |lab1_haha|LAB2:inst5|inst2 ; out0             ;
+; |lab1_haha|LAB2:inst4|inst3 ; |lab1_haha|LAB2:inst4|inst3 ; out0             ;
+; |lab1_haha|LAB2:inst4|inst2 ; |lab1_haha|LAB2:inst4|inst2 ; out0             ;
+; |lab1_haha|LAB2:inst4|inst1 ; |lab1_haha|LAB2:inst4|inst1 ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |lab1_haha|S0               ; |lab1_haha|S0               ; out              ;
+; |lab1_haha|inst20           ; |lab1_haha|inst20           ; out0             ;
+; |lab1_haha|S1               ; |lab1_haha|S1               ; out              ;
+; |lab1_haha|inst53           ; |lab1_haha|inst53           ; out0             ;
+; |lab1_haha|inst44           ; |lab1_haha|inst44           ; out0             ;
+; |lab1_haha|inst41           ; |lab1_haha|inst41           ; out0             ;
+; |lab1_haha|LAB2:inst3|inst3 ; |lab1_haha|LAB2:inst3|inst3 ; out0             ;
+; |lab1_haha|LAB2:inst3|inst2 ; |lab1_haha|LAB2:inst3|inst2 ; out0             ;
+; |lab1_haha|LAB2:inst3|inst1 ; |lab1_haha|LAB2:inst3|inst1 ; out0             ;
+; |lab1_haha|LAB2:inst5|inst2 ; |lab1_haha|LAB2:inst5|inst2 ; out0             ;
+; |lab1_haha|LAB2:inst4|inst3 ; |lab1_haha|LAB2:inst4|inst3 ; out0             ;
+; |lab1_haha|LAB2:inst4|inst2 ; |lab1_haha|LAB2:inst4|inst2 ; out0             ;
+; |lab1_haha|LAB2:inst4|inst1 ; |lab1_haha|LAB2:inst4|inst1 ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Sep 29 07:57:04 2026
+Info: Command: quartus_sim --simulation_results_format=VWF lab1_haha -c lab1_haha
+Info (324025): Using vector source file "D:/github_git/repo/DIGITAL-LOGIC-DESIGN/quartuss1/lab1_4/Waveform5.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 500.0 ns on register "|lab1_haha|inst2"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      75.00 %
+Info (328052): Number of transitions in simulation is 605
+Info (324045): Vector file lab1_haha.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Tue Sep 29 07:57:04 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
