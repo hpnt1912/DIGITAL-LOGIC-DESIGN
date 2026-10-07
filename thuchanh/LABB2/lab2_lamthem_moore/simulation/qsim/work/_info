@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\github_git\repo\DIGITAL-LOGIC-DESIGN\thuchanh\LABB2\lab2_lamthem_moore\simulation\qsim
+vBlock4
+Z1 IbDnh><NiMG@7UBODmI_jJ3
+Z2 VS`TzmRlk3c<1o3d>I_@9O2
+Z3 dD:\github_git\repo\DIGITAL-LOGIC-DESIGN\thuchanh\LABB2\lab2_lamthem_moore\simulation\qsim
+Z4 w1791303508
+Z5 8lab2.vo
+Z6 Flab2.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@block4
+!i10b 1
+Z10 !s100 h0@bo>YS0XOKTTT>QJ??R2
+!s85 0
+Z11 !s108 1791303508.478000
+Z12 !s107 lab2.vo|
+Z13 !s90 -work|work|lab2.vo|
+!s101 -O0
+vBlock4_vlg_check_tst
+!i10b 1
+!s100 [m=5oWGEb_6f]RKcj>NJ`2
+I<F=6;_7@J]MN8NnVEOli;1
+V9<Rc<_<@og4?A=C;V>PeP2
+R3
+Z14 w1791303507
+Z15 8lab2.vt
+Z16 Flab2.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z17 !s108 1791303508.519000
+Z18 !s107 lab2.vt|
+Z19 !s90 -work|work|lab2.vt|
+!s101 -O0
+R8
+n@block4_vlg_check_tst
+vBlock4_vlg_sample_tst
+!i10b 1
+!s100 ;A@8HcX@>C7SSUeKN2;:71
+I9kT]QP`T`NCf@M`hLA:BT0
+VN_n4lVYh?[@z=XnILK0X;3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@block4_vlg_sample_tst
+vBlock4_vlg_vec_tst
+!i10b 1
+!s100 dDWM;<J6JlY1X]5S`L[I:2
+IY=A8L_jM6kHmo?7keX8N52
+V9z8m<m?iLPMbYaoLS?T]d1
+R3
+R14
+R15
+R16
+L0 160
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@block4_vlg_vec_tst
