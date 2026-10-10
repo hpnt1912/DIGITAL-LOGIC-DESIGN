@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2_banhang
-Wed Oct 07 22:24:34 2026
+Fri Oct 09 11:31:49 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 07 22:24:34 2026           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 09 11:31:49 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab2_banhang                                    ;
-; Top-level Entity Name              ; Block6                                          ;
+; Top-level Entity Name              ; block_cuoi                                      ;
 ; Family                             ; Cyclone II                                      ;
 ; Total logic elements               ; 19                                              ;
 ;     Total combinational functions  ; 19                                              ;
 ;     Dedicated logic registers      ; 4                                               ;
 ; Total registers                    ; 4                                               ;
-; Total pins                         ; 12                                              ;
+; Total pins                         ; 13                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; Block6             ; Lab2_banhang       ;
+; Top-level entity name                                                      ; block_cuoi         ; Lab2_banhang       ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,51 +164,55 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Block2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/Block2.bdf       ;         ;
 ; Block4.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/Block4.bdf       ;         ;
 ; Block5.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/Block5.bdf       ;         ;
-; Block6.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/Block6.bdf       ;         ;
+; block7.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/block7.bdf       ;         ;
+; block8.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/block8.bdf       ;         ;
+; block9.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/block9.bdf       ;         ;
+; block10.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/block10.bdf      ;         ;
+; block_cuoi.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/block_cuoi.bdf   ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimated Total logic elements              ; 19                           ;
-;                                             ;                              ;
-; Total combinational functions               ; 19                           ;
-; Logic element usage by number of LUT inputs ;                              ;
-;     -- 4 input functions                    ; 15                           ;
-;     -- 3 input functions                    ; 3                            ;
-;     -- <=2 input functions                  ; 1                            ;
-;                                             ;                              ;
-; Logic elements by mode                      ;                              ;
-;     -- normal mode                          ; 19                           ;
-;     -- arithmetic mode                      ; 0                            ;
-;                                             ;                              ;
-; Total registers                             ; 4                            ;
-;     -- Dedicated logic registers            ; 4                            ;
-;     -- I/O registers                        ; 0                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 12                           ;
-; Embedded Multiplier 9-bit elements          ; 0                            ;
-; Maximum fan-out node                        ; Block5:inst|Block4:inst3|lol ;
-; Maximum fan-out                             ; 11                           ;
-; Total fan-out                               ; 86                           ;
-; Average fan-out                             ; 2.46                         ;
-+---------------------------------------------+------------------------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimated Total logic elements              ; 19                 ;
+;                                             ;                    ;
+; Total combinational functions               ; 19                 ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 14                 ;
+;     -- 3 input functions                    ; 3                  ;
+;     -- <=2 input functions                  ; 2                  ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 19                 ;
+;     -- arithmetic mode                      ; 0                  ;
+;                                             ;                    ;
+; Total registers                             ; 4                  ;
+;     -- Dedicated logic registers            ; 4                  ;
+;     -- I/O registers                        ; 0                  ;
+;                                             ;                    ;
+; I/O pins                                    ; 13                 ;
+; Embedded Multiplier 9-bit elements          ; 0                  ;
+; Maximum fan-out node                        ; Block4:inst1|inst3 ;
+; Maximum fan-out                             ; 11                 ;
+; Total fan-out                               ; 84                 ;
+; Average fan-out                             ; 2.33               ;
++---------------------------------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; |Block6                    ; 19 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |Block6                          ; work         ;
-;    |Block5:inst|           ; 19 (14)           ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block6|Block5:inst              ; work         ;
-;       |Block1:inst|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block6|Block5:inst|Block1:inst  ; work         ;
-;       |Block2:inst1|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block6|Block5:inst|Block2:inst1 ; work         ;
-;       |Block4:inst3|       ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block6|Block5:inst|Block4:inst3 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; |block_cuoi                ; 19 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |block_cuoi                        ; work         ;
+;    |Block2:inst2|          ; 5 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |block_cuoi|Block2:inst2           ; work         ;
+;       |Block1:ko|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |block_cuoi|Block2:inst2|Block1:ko ; work         ;
+;    |Block4:inst1|          ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |block_cuoi|Block4:inst1           ; work         ;
+;    |block10:inst|          ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |block_cuoi|block10:inst           ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -242,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 07 22:24:33 2026
+    Info: Processing started: Fri Oct 09 11:31:48 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2_banhang -c Lab2_banhang
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lab2_banhang.bdf
@@ -255,23 +259,35 @@ Info (12021): Found 1 design units, including 1 entities, in source file block4.
     Info (12023): Found entity 1: Block4
 Info (12021): Found 1 design units, including 1 entities, in source file block5.bdf
     Info (12023): Found entity 1: Block5
-Info (12021): Found 1 design units, including 1 entities, in source file block6.bdf
-    Info (12023): Found entity 1: Block6
-Info (12127): Elaborating entity "Block6" for the top level hierarchy
-Info (12128): Elaborating entity "Block5" for hierarchy "Block5:inst"
-Info (12128): Elaborating entity "Block2" for hierarchy "Block5:inst|Block2:inst1"
-Info (12128): Elaborating entity "Block1" for hierarchy "Block5:inst|Block2:inst1|Block1:ko"
-Info (12128): Elaborating entity "Block4" for hierarchy "Block5:inst|Block4:inst3"
-Info (12128): Elaborating entity "Lab2_banhang" for hierarchy "Block5:inst|Lab2_banhang:inst2"
+Info (12021): Found 1 design units, including 1 entities, in source file block7.bdf
+    Info (12023): Found entity 1: block7
+Info (12021): Found 1 design units, including 1 entities, in source file block8.bdf
+    Info (12023): Found entity 1: block8
+Info (12021): Found 1 design units, including 1 entities, in source file block9.bdf
+    Info (12023): Found entity 1: block9
+Info (12021): Found 1 design units, including 1 entities, in source file block10.bdf
+    Info (12023): Found entity 1: block10
+Info (12021): Found 1 design units, including 1 entities, in source file block_cuoi.bdf
+    Info (12023): Found entity 1: block_cuoi
+Info (12127): Elaborating entity "block_cuoi" for the top level hierarchy
+Info (12128): Elaborating entity "Block2" for hierarchy "Block2:inst2"
+Info (12128): Elaborating entity "Block1" for hierarchy "Block2:inst2|Block1:ko"
+Info (12128): Elaborating entity "Block4" for hierarchy "Block4:inst1"
+Info (12128): Elaborating entity "block10" for hierarchy "block10:inst"
+Info (12128): Elaborating entity "Block5" for hierarchy "block10:inst|Block5:inst"
+Info (12128): Elaborating entity "Lab2_banhang" for hierarchy "block10:inst|Block5:inst|Lab2_banhang:inst"
+Info (12128): Elaborating entity "block7" for hierarchy "block10:inst|block7:inst1"
+Info (12128): Elaborating entity "block8" for hierarchy "block10:inst|block8:inst11"
+Info (12128): Elaborating entity "block9" for hierarchy "block10:inst|block9:inst12"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 19 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4590 megabytes
-    Info: Processing ended: Wed Oct 07 22:24:34 2026
+    Info: Peak virtual memory: 4591 megabytes
+    Info: Processing ended: Fri Oct 09 11:31:49 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

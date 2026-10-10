@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Oct 06 23:28:26 2026
+Analysis & Synthesis Status : Successful - Fri Oct 09 13:57:17 2026
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : lab2
-Top-level Entity Name : Block4
+Top-level Entity Name : block_cuoi
 Family : Cyclone II
-Total logic elements : 15
-    Total combinational functions : 15
+Total logic elements : 17
+    Total combinational functions : 17
     Dedicated logic registers : 4
 Total registers : 4
-Total pins : 6
+Total pins : 5
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
