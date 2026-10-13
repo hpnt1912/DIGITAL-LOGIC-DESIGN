@@ -1,5 +1,13 @@
 Flow report for lab2
+<<<<<<< Updated upstream
 Tue Oct 13 09:19:12 2026
+=======
+<<<<<<< HEAD
+Tue Oct 13 09:19:12 2026
+=======
+Sat Oct 10 16:35:29 2026
+>>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
+>>>>>>> Stashed changes
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,6 +48,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 ; Flow Status                        ; Successful - Tue Oct 13 09:19:11 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lab2                                            ;
@@ -52,6 +64,23 @@ applicable agreement for further details.
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 7 / 475 ( 1 % )                                 ;
+<<<<<<< Updated upstream
+=======
+=======
+; Flow Status                        ; Successful - Sat Oct 10 16:35:28 2026           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; lab2                                            ;
+; Top-level Entity Name              ; Block9                                          ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 18 / 33,216 ( < 1 % )                           ;
+;     Total combinational functions  ; 18 / 33,216 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 10 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 10                                              ;
+; Total pins                         ; 14 / 475 ( 3 % )                                ;
+>>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
+>>>>>>> Stashed changes
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,12 +93,24 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< Updated upstream
 ; Start date & time ; 10/13/2026 09:19:04 ;
+=======
+<<<<<<< HEAD
+; Start date & time ; 10/13/2026 09:19:04 ;
+=======
+; Start date & time ; 10/10/2026 16:35:21 ;
+>>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
+>>>>>>> Stashed changes
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab2                ;
 +-------------------+---------------------+
 
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 +----------------------------------------------------------------------------------------------------------------+
 ; Flow Non-Default Global Settings                                                                               ;
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
@@ -84,6 +125,25 @@ applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                  ; --            ; --          ; --         ;
 ; TOP_LEVEL_ENTITY                    ; block11                       ; lab2          ; --          ; --         ;
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
+<<<<<<< Updated upstream
+=======
+=======
++------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                 ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 237785197750492.179162492129660 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; Block9      ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; Block9      ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; Block9      ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; Block9                          ; lab2          ; --          ; --         ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+>>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
+>>>>>>> Stashed changes
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -91,11 +151,25 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4580 MB             ; 00:00:01                           ;
 ; Fitter                    ; 00:00:03     ; 1.0                     ; 4875 MB             ; 00:00:03                           ;
 ; Assembler                 ; 00:00:02     ; 1.0                     ; 4556 MB             ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4540 MB             ; 00:00:01                           ;
 ; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
+<<<<<<< Updated upstream
+=======
+=======
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4581 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 4884 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4561 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4541 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
+>>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
+>>>>>>> Stashed changes
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +178,23 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 ; Analysis & Synthesis      ; LAPTOP-2RM30BH4  ; Windows 7 ; 6.2        ; x86_64         ;
 ; Fitter                    ; LAPTOP-2RM30BH4  ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; LAPTOP-2RM30BH4  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; LAPTOP-2RM30BH4  ; Windows 7 ; 6.2        ; x86_64         ;
+<<<<<<< Updated upstream
+=======
+=======
+; Analysis & Synthesis      ; NgocThang        ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; NgocThang        ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; NgocThang        ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; NgocThang        ; Windows 7 ; 6.2        ; x86_64         ;
+>>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
+>>>>>>> Stashed changes
 +---------------------------+------------------+-----------+------------+----------------+
 
 
