@@ -1,32 +1,13 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
-Analysis & Synthesis Status : Successful - Tue Oct 13 09:19:05 2026
+Analysis & Synthesis Status : Successful - Wed Oct 14 10:21:44 2026
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : lab2
-Top-level Entity Name : block11
+Top-level Entity Name : block_cuoi
 Family : Cyclone II
-Total logic elements : 2
-    Total combinational functions : 2
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 7
-<<<<<<< Updated upstream
-=======
-=======
-Analysis & Synthesis Status : Successful - Sat Oct 10 16:35:22 2026
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
-Revision Name : lab2
-Top-level Entity Name : Block9
-Family : Cyclone II
-Total logic elements : 18
-    Total combinational functions : 18
-    Dedicated logic registers : 10
-Total registers : 10
-Total pins : 14
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
+Total logic elements : 52
+    Total combinational functions : 52
+    Dedicated logic registers : 20
+Total registers : 20
+Total pins : 11
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

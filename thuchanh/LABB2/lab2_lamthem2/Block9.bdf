@@ -23,15 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 376 192 544 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "X3" (rect 5 0 16 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "X3" (rect 5 0 16 12)(font "Arial" ))
-=======
-	(text "X3" (rect 5 0 17 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -47,15 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 376 208 544 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "X2" (rect 5 0 16 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "X2" (rect 5 0 16 12)(font "Arial" ))
-=======
-	(text "X2" (rect 5 0 17 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,15 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 376 224 544 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "X1" (rect 5 0 16 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "X1" (rect 5 0 16 12)(font "Arial" ))
-=======
-	(text "X1" (rect 5 0 17 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -95,15 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 376 240 544 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "X0" (rect 5 0 16 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "X0" (rect 5 0 16 12)(font "Arial" ))
-=======
-	(text "X0" (rect 5 0 17 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,15 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 0 256 168 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "Q2" (rect 5 0 19 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "Q2" (rect 5 0 19 12)(font "Arial" ))
-=======
-	(text "Q2" (rect 5 0 20 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -159,15 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect 0 288 168 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "Q1" (rect 5 0 19 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "Q1" (rect 5 0 19 12)(font "Arial" ))
-=======
-	(text "Q1" (rect 5 0 20 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -183,15 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 0 304 168 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "Q0" (rect 5 0 19 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "Q0" (rect 5 0 19 12)(font "Arial" ))
-=======
-	(text "Q0" (rect 5 0 20 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -207,15 +151,7 @@ applicable agreement for further details.
 	(input)
 	(rect 376 320 544 336)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "reset" (rect 5 0 29 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "reset" (rect 5 0 29 12)(font "Arial" ))
-=======
-	(text "reset" (rect 5 0 30 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -231,15 +167,7 @@ applicable agreement for further details.
 	(input)
 	(rect 184 72 352 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-<<<<<<< Updated upstream
 	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
-=======
-<<<<<<< HEAD
-	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
-=======
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -313,114 +241,6 @@ applicable agreement for further details.
 		(line (pt 78 4)(pt 82 8))
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
-	)
-)
-(symbol
-	(rect 784 512 904 608)
-	(text "Block6" (rect 5 0 42 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "EN" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "EN" (rect 21 43 36 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "CLRN" (rect 21 59 52 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "cnt_5" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "cnt_5" (rect 68 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 104 80))
-	)
-)
-(symbol
-	(rect 1232 136 1352 232)
-	(text "Block8" (rect 5 0 42 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "EN" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "EN" (rect 21 43 36 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "CLRN" (rect 21 59 52 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "cnt_3" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "cnt_3" (rect 68 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 104 80))
-	)
-)
-(symbol
-	(rect 784 392 904 488)
-	(text "Block7" (rect 5 0 42 14)(font "Arial" (font_size 8)))
-	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "EN" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "EN" (rect 21 43 36 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "CLRN" (rect 21 59 52 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "cnt_20" (rect 0 0 38 14)(font "Arial" (font_size 8)))
-		(text "cnt_20" (rect 61 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 104 80))
 	)
 )
 (symbol
@@ -782,6 +602,114 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
+(symbol
+	(rect 784 392 904 488)
+	(text "Block7" (rect 5 0 42 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "EN" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "EN" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "CLRN" (rect 21 59 52 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "cnt_20" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "cnt_20" (rect 61 27 99 41)(font "Arial" (font_size 8)))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 80))
+	)
+)
+(symbol
+	(rect 784 512 904 608)
+	(text "Block6" (rect 5 0 42 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "EN" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "EN" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "CLRN" (rect 21 59 52 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "cnt_5" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "cnt_5" (rect 68 27 99 41)(font "Arial" (font_size 8)))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 80))
+	)
+)
+(symbol
+	(rect 1232 136 1352 232)
+	(text "Block8" (rect 5 0 42 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "EN" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "EN" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "CLRN" (rect 21 59 52 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "cnt_3" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "cnt_3" (rect 68 27 99 41)(font "Arial" (font_size 8)))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 80))
+	)
+)
 (connector
 	(pt 544 200)
 	(pt 656 200)
@@ -1035,16 +963,6 @@ applicable agreement for further details.
 	(pt 368 80)
 )
 (connector
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
-	(pt 368 80)
-	(pt 1192 80)
-)
-(connector
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 	(pt 784 544)
 	(pt 576 544)
 )
@@ -1152,10 +1070,6 @@ applicable agreement for further details.
 	(pt 904 544)
 	(pt 1296 544)
 )
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
 (connector
 	(pt 656 280)
 	(pt 648 280)
@@ -1166,17 +1080,8 @@ applicable agreement for further details.
 )
 (connector
 	(pt 368 80)
-	(pt 648 80)
-)
-(connector
-	(pt 648 80)
 	(pt 1192 80)
 )
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes
 (junction (pt 616 328))
 (junction (pt 752 440))
 (junction (pt 640 440))
@@ -1192,11 +1097,3 @@ applicable agreement for further details.
 (junction (pt 272 264))
 (junction (pt 888 184))
 (junction (pt 968 424))
-<<<<<<< Updated upstream
-(junction (pt 648 80))
-=======
-<<<<<<< HEAD
-(junction (pt 648 80))
-=======
->>>>>>> 1d170d344975e467c97bfa25bc82aaaa04f9750a
->>>>>>> Stashed changes

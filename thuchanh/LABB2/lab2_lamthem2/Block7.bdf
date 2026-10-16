@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 656 296 824 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLRN" (rect 5 0 36 12)(font "Arial" ))
+	(text "CLRN" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -81,31 +81,6 @@ applicable agreement for further details.
 		(line (pt 78 4)(pt 82 8))
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
-	)
-)
-(symbol
-	(rect 1112 440 1160 472)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst1" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
 	)
 )
 (symbol
@@ -361,18 +336,6 @@ applicable agreement for further details.
 	(pt 1200 288)
 )
 (connector
-	(pt 1160 456)
-	(pt 1216 456)
-)
-(connector
-	(pt 1216 456)
-	(pt 1216 320)
-)
-(connector
-	(pt 1256 320)
-	(pt 1216 320)
-)
-(connector
 	(pt 576 280)
 	(pt 488 280)
 )
@@ -409,32 +372,8 @@ applicable agreement for further details.
 	(pt 1112 368)
 )
 (connector
-	(pt 976 320)
-	(pt 1048 320)
-)
-(connector
-	(pt 1048 320)
-	(pt 1048 416)
-)
-(connector
 	(pt 1048 416)
 	(pt 1112 416)
-)
-(connector
-	(pt 976 336)
-	(pt 1032 336)
-)
-(connector
-	(pt 1032 336)
-	(pt 1032 456)
-)
-(connector
-	(pt 1032 456)
-	(pt 1112 456)
-)
-(connector
-	(pt 976 304)
-	(pt 1256 304)
 )
 (connector
 	(pt 1256 336)
@@ -471,5 +410,37 @@ applicable agreement for further details.
 (connector
 	(pt 824 304)
 	(pt 880 304)
+)
+(connector
+	(pt 976 304)
+	(pt 1048 304)
+)
+(connector
+	(pt 1048 304)
+	(pt 1048 416)
+)
+(connector
+	(pt 976 320)
+	(pt 1256 320)
+)
+(connector
+	(pt 976 336)
+	(pt 1016 336)
+)
+(connector
+	(pt 1016 336)
+	(pt 1016 312)
+)
+(connector
+	(pt 1016 312)
+	(pt 1240 312)
+)
+(connector
+	(pt 1256 304)
+	(pt 1240 304)
+)
+(connector
+	(pt 1240 304)
+	(pt 1240 312)
 )
 (junction (pt 1384 304))

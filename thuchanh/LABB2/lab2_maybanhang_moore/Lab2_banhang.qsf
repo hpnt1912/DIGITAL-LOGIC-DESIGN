@@ -65,6 +65,20 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LABB2/lab2_maybanhang_moore/Waveform1.vwf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_G26 -to CLK
+set_location_assignment PIN_N26 -to X1
+set_location_assignment PIN_N25 -to X0
+set_location_assignment PIN_U18 -to R0
+set_location_assignment PIN_U17 -to R1
+set_location_assignment PIN_AA20 -to R2
+set_location_assignment PIN_Y18 -to R3
+set_location_assignment PIN_P25 -to coin_valid
+set_location_assignment PIN_AE14 -to cancel
+set_location_assignment PIN_AF14 -to reset
+set_location_assignment PIN_AE22 -to error
+set_location_assignment PIN_AF22 -to re_valid
+set_location_assignment PIN_W19 -to vend
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
