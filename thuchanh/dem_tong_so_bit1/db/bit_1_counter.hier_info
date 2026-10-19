@@ -1,0 +1,211 @@
+|Read_B
+RD_B[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RD_B[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+RD_B[2] <= la.DB_MAX_OUTPUT_PORT_TYPE
+RD_B[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+REB => inst4.IN0
+REB => la.IN0
+REB => inst5.IN0
+REB => inst6.IN0
+RAB[0] => mux4_1:inst.S0
+RAB[0] => mux4_1:inst1.S0
+RAB[0] => mux4_1:inst2.S0
+RAB[0] => mux4_1:inst3.S0
+RAB[1] => mux4_1:inst.S1
+RAB[1] => mux4_1:inst1.S1
+RAB[1] => mux4_1:inst2.S1
+RAB[1] => mux4_1:inst3.S1
+RAB[2] => mux2_1:inst7.S
+RAB[2] => mux2_1:inst8.S
+RAB[2] => mux2_1:inst9.S
+RAB[2] => mux2_1:inst10.S
+R1[0] => mux4_1:inst3.I1
+R1[1] => mux4_1:inst2.I1
+R1[2] => mux4_1:inst1.I1
+R1[3] => mux4_1:inst.I1
+R2[0] => mux4_1:inst3.I2
+R2[1] => mux4_1:inst2.I2
+R2[2] => mux4_1:inst1.I2
+R2[3] => mux4_1:inst.I2
+R3[0] => mux4_1:inst3.I3
+R3[1] => mux4_1:inst2.I3
+R3[2] => mux4_1:inst1.I3
+R3[3] => mux4_1:inst.I3
+R4[0] => mux2_1:inst10.B
+R4[1] => mux2_1:inst9.B
+R4[2] => mux2_1:inst8.B
+R4[3] => mux2_1:inst7.B
+
+
+|Read_B|mux2_1:inst7
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst
+Y <= mux2_1:inst2.Y
+I0 => mux2_1:inst.A
+I1 => mux2_1:inst.B
+S0 => mux2_1:inst.S
+S0 => mux2_1:inst1.S
+I2 => mux2_1:inst1.A
+I3 => mux2_1:inst1.B
+S1 => mux2_1:inst2.S
+
+
+|Read_B|mux4_1:inst|mux2_1:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst|mux2_1:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst|mux2_1:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux2_1:inst8
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst1
+Y <= mux2_1:inst2.Y
+I0 => mux2_1:inst.A
+I1 => mux2_1:inst.B
+S0 => mux2_1:inst.S
+S0 => mux2_1:inst1.S
+I2 => mux2_1:inst1.A
+I3 => mux2_1:inst1.B
+S1 => mux2_1:inst2.S
+
+
+|Read_B|mux4_1:inst1|mux2_1:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst1|mux2_1:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst1|mux2_1:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux2_1:inst9
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst2
+Y <= mux2_1:inst2.Y
+I0 => mux2_1:inst.A
+I1 => mux2_1:inst.B
+S0 => mux2_1:inst.S
+S0 => mux2_1:inst1.S
+I2 => mux2_1:inst1.A
+I3 => mux2_1:inst1.B
+S1 => mux2_1:inst2.S
+
+
+|Read_B|mux4_1:inst2|mux2_1:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst2|mux2_1:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst2|mux2_1:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux2_1:inst10
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst3
+Y <= mux2_1:inst2.Y
+I0 => mux2_1:inst.A
+I1 => mux2_1:inst.B
+S0 => mux2_1:inst.S
+S0 => mux2_1:inst1.S
+I2 => mux2_1:inst1.A
+I3 => mux2_1:inst1.B
+S1 => mux2_1:inst2.S
+
+
+|Read_B|mux4_1:inst3|mux2_1:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst3|mux2_1:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
+|Read_B|mux4_1:inst3|mux2_1:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+S => inst.IN0
+S => inst2.IN1
+B => inst2.IN0
+
+
