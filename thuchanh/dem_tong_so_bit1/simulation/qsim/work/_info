@@ -1,0 +1,123 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\github_git\repo\DIGITAL-LOGIC-DESIGN\thuchanh\dem_tong_so_bit1\simulation\qsim
+vBit1Counter
+Z1 !s100 Jab5ck1]iA`PLQ4gWo@0P3
+Z2 IPRP4Y<2H2G`B`68[e@]DY2
+Z3 VBR6n:OzN^f<ODdDOD@c;=0
+Z4 dD:\github_git\repo\DIGITAL-LOGIC-DESIGN\thuchanh\dem_tong_so_bit1\simulation\qsim
+Z5 w1792483488
+Z6 8bit_1_counter.vo
+Z7 Fbit_1_counter.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|bit_1_counter.vo|
+Z10 o-work work -O0
+Z11 n@bit1@counter
+Z12 !s108 1792483488.465000
+Z13 !s107 bit_1_counter.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vBit1Counter_vlg_check_tst
+Z14 !s100 >^04>M1I]Jz0<1<oUQf>;1
+Z15 I9F3SGo3bB`GgcR:Wznj@C0
+Z16 VYIBIcDZRl1COgP^1amleU1
+R4
+Z17 w1792483487
+Z18 8bit_1_counter.vt
+Z19 Fbit_1_counter.vt
+L0 61
+R8
+r1
+31
+Z20 !s108 1792483488.530000
+Z21 !s107 bit_1_counter.vt|
+Z22 !s90 -work|work|bit_1_counter.vt|
+R10
+Z23 n@bit1@counter_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vBit1Counter_vlg_sample_tst
+Z24 !s100 IYIYC:z4WVV6:gQo3K:OH0
+Z25 IF9?5OQzT3dN7cW[LE85Q[1
+Z26 V`NR8;Kz00eR3FgC075L^11
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 n@bit1@counter_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vBit1Counter_vlg_vec_tst
+Z28 II^PJnQ8DUd1[Z:b:Q4J[G0
+Z29 V<4?BkIiRX;FCMI;aT:O0@1
+R4
+R17
+R18
+R19
+Z30 L0 317
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z31 n@bit1@counter_vlg_vec_tst
+Z32 !s100 Zj;1`N47^amXc59?Fi45l0
+!i10b 1
+!s85 0
+!s101 -O0
+vregister_4bit
+Z33 !s100 Q5AUELbDSzeSaJE0IGBZ51
+Z34 IYVGFK<ll`7BIGZ]9gaIOk0
+Z35 VK[HZd@JC?a0<dMTj>7mVD1
+R4
+Z36 w1792484241
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+!s85 0
+Z37 !s108 1792484242.389000
+R13
+!s101 -O0
+vregister_4bit_vlg_vec_tst
+!i10b 1
+!s100 AfLL9`d3JQSemG_QEgD=F0
+IjU8CY_C[PCV^O1A[IL7]@3
+Z38 V7WT<>_InXjA7Uc0g_9RYm0
+R4
+R36
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+!s108 1792484242.437000
+!s107 bit_1_counter.vt|
+R22
+!s101 -O0
+R10

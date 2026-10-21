@@ -69,9 +69,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 320 456 488 472)
+	(rect 544 456 712 472)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "R1[3..0]" (rect 5 0 46 12)(font "Arial" ))
+	(text "DATA_ZERO" (rect 5 0 70 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -172,28 +172,6 @@ applicable agreement for further details.
 		(line (pt 13 7)(pt 31 16))
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect 544 432 712 528)
-	(text "DATA_ZERO" (rect 5 0 79 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "R1[3..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
-		(text "R1[3..0]" (rect 21 27 64 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 168 32)
-		(output)
-		(text "DATA_ZERO" (rect 0 0 74 14)(font "Arial" (font_size 8)))
-		(text "DATA_ZERO" (rect 73 27 147 41)(font "Arial" (font_size 8)))
-		(line (pt 168 32)(pt 152 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 152 80))
 	)
 )
 (symbol
@@ -425,11 +403,6 @@ applicable agreement for further details.
 (connector
 	(pt 768 392)
 	(pt 744 392)
-)
-(connector
-	(pt 488 464)
-	(pt 544 464)
-	(bus)
 )
 (connector
 	(pt 832 312)
