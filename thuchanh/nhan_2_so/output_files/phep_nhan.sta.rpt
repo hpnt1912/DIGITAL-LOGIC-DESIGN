@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for phep_nhan
-Wed Oct 21 15:56:09 2026
+Thu Oct 22 10:32:27 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -1123,7 +1123,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 21 15:56:08 2026
+    Info: Processing started: Thu Oct 22 10:32:27 2026
 Info: Command: quartus_sta phep_nhan -c phep_nhan
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1169,9 +1169,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4540 megabytes
-    Info: Processing ended: Wed Oct 21 15:56:09 2026
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4541 megabytes
+    Info: Processing ended: Thu Oct 22 10:32:27 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
