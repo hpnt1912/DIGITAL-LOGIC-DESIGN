@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Fri Oct 23 10:41:29 2026
+Fri Oct 23 17:20:04 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,8 +14,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 23 10:41:29 2026           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 23 17:20:04 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lab3                                            ;
-; Top-level Entity Name              ; mux4_1                                          ;
+; Top-level Entity Name              ; mach_cuoi                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 2                                               ;
-;     Total combinational functions  ; 2                                               ;
+; Total logic elements               ; 178                                             ;
+;     Total combinational functions  ; 178                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 7                                               ;
+; Total pins                         ; 51                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; mux4_1             ; lab3               ;
+; Top-level entity name                                                      ; mach_cuoi          ; lab3               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,54 +155,170 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; mux2_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/mux2_1.bdf ;         ;
-; mux4_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/mux4_1.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+---------+
+; AND_4bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/AND_4bit.bdf         ;         ;
+; AND_16bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/AND_16bit.bdf        ;         ;
+; OR_4bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/OR_4bit.bdf          ;         ;
+; OR_16bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/OR_16bit.bdf         ;         ;
+; NAND_4bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/NAND_4bit.bdf        ;         ;
+; NAND_16bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/NAND_16bit.bdf       ;         ;
+; XOR_4bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/XOR_4bit.bdf         ;         ;
+; XOR_16bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/XOR_16bit.bdf        ;         ;
+; mux2_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/mux2_1.bdf           ;         ;
+; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/full_adder.bdf       ;         ;
+; full_adder_16bit.bdf             ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/full_adder_16bit.bdf ;         ;
+; sub_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/sub_adder.bdf        ;         ;
+; full_sub_16bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/full_sub_16bit.bdf   ;         ;
+; AU.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/AU.bdf               ;         ;
+; mux4_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/mux4_1.bdf           ;         ;
+; LU.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/LU.bdf               ;         ;
+; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/ALU.bdf              ;         ;
+; mux2_1_8bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/mux2_1_8bit.bdf      ;         ;
+; mach_cuoi.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3_thuchanh/mach_cuoi.bdf        ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 2     ;
-;                                             ;       ;
-; Total combinational functions               ; 2     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 2     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 2     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 7     ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; S1    ;
-; Maximum fan-out                             ; 2     ;
-; Total fan-out                               ; 9     ;
-; Average fan-out                             ; 1.00  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 178       ;
+;                                             ;           ;
+; Total combinational functions               ; 178       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 113       ;
+;     -- 3 input functions                    ; 41        ;
+;     -- <=2 input functions                  ; 24        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 178       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 0         ;
+;     -- Dedicated logic registers            ; 0         ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 51        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; Opcode[0] ;
+; Maximum fan-out                             ; 51        ;
+; Total fan-out                               ; 639       ;
+; Average fan-out                             ; 2.79      ;
++---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                          ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------+--------------+
-; |mux4_1                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |mux4_1              ; work         ;
-;    |mux2_1:inst2|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mux4_1|mux2_1:inst2 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Library Name ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
+; |mach_cuoi                        ; 178 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 51   ; 0            ; |mach_cuoi                                                           ; work         ;
+;    |ALU:inst|                     ; 178 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst                                                  ; work         ;
+;       |AU:inst|                   ; 70 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst                                          ; work         ;
+;          |full_adder_16bit:inst1| ; 39 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1                   ; work         ;
+;             |full_adder:inst10|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst10 ; work         ;
+;             |full_adder:inst11|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst11 ; work         ;
+;             |full_adder:inst12|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst12 ; work         ;
+;             |full_adder:inst13|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst13 ; work         ;
+;             |full_adder:inst14|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst14 ; work         ;
+;             |full_adder:inst15|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst15 ; work         ;
+;             |full_adder:inst2|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst2  ; work         ;
+;             |full_adder:inst32|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst32 ; work         ;
+;             |full_adder:inst34|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst34 ; work         ;
+;             |full_adder:inst35|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst35 ; work         ;
+;             |full_adder:inst36|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst36 ; work         ;
+;             |full_adder:inst38|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst38 ; work         ;
+;             |full_adder:inst3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst3  ; work         ;
+;             |full_adder:inst40|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst40 ; work         ;
+;             |full_adder:inst41|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst41 ; work         ;
+;             |full_adder:inst42|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst42 ; work         ;
+;             |full_adder:inst44|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst44 ; work         ;
+;             |full_adder:inst4|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst4  ; work         ;
+;             |full_adder:inst5|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst5  ; work         ;
+;             |full_adder:inst6|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst6  ; work         ;
+;             |full_adder:inst7|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst7  ; work         ;
+;             |full_adder:inst8|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst8  ; work         ;
+;             |full_adder:inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst   ; work         ;
+;          |full_sub_16bit:inst|    ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst                      ; work         ;
+;             |sub_adder:inst10|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst10     ; work         ;
+;             |sub_adder:inst11|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst11     ; work         ;
+;             |sub_adder:inst13|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst13     ; work         ;
+;             |sub_adder:inst14|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst14     ; work         ;
+;             |sub_adder:inst15|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst15     ; work         ;
+;             |sub_adder:inst1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst1      ; work         ;
+;             |sub_adder:inst33|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst33     ; work         ;
+;             |sub_adder:inst34|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst34     ; work         ;
+;             |sub_adder:inst35|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst35     ; work         ;
+;             |sub_adder:inst36|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst36     ; work         ;
+;             |sub_adder:inst37|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst37     ; work         ;
+;             |sub_adder:inst38|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst38     ; work         ;
+;             |sub_adder:inst39|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst39     ; work         ;
+;             |sub_adder:inst41|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst41     ; work         ;
+;             |sub_adder:inst42|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst42     ; work         ;
+;             |sub_adder:inst43|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst43     ; work         ;
+;             |sub_adder:inst45|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst45     ; work         ;
+;             |sub_adder:inst4|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst4      ; work         ;
+;             |sub_adder:inst6|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst6      ; work         ;
+;             |sub_adder:inst7|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst7      ; work         ;
+;             |sub_adder:inst8|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst8      ; work         ;
+;             |sub_adder:inst9|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst9      ; work         ;
+;             |sub_adder:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst       ; work         ;
+;       |LU:inst1|                  ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1                                         ; work         ;
+;          |NAND_16bit:inst2|       ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|NAND_16bit:inst2                        ; work         ;
+;             |NAND_4bit:inst1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|NAND_16bit:inst2|NAND_4bit:inst1        ; work         ;
+;             |NAND_4bit:inst2|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|NAND_16bit:inst2|NAND_4bit:inst2        ; work         ;
+;             |NAND_4bit:inst3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|NAND_16bit:inst2|NAND_4bit:inst3        ; work         ;
+;             |NAND_4bit:inst|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|NAND_16bit:inst2|NAND_4bit:inst         ; work         ;
+;          |XOR_16bit:inst4|        ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|XOR_16bit:inst4                         ; work         ;
+;             |XOR_4bit:inst1|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|XOR_16bit:inst4|XOR_4bit:inst1          ; work         ;
+;             |XOR_4bit:inst2|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|XOR_16bit:inst4|XOR_4bit:inst2          ; work         ;
+;             |XOR_4bit:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|XOR_16bit:inst4|XOR_4bit:inst3          ; work         ;
+;             |XOR_4bit:inst|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|XOR_16bit:inst4|XOR_4bit:inst           ; work         ;
+;          |mux4_1:Ka|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:Ka                               ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:Ka|mux2_1:inst                   ; work         ;
+;          |mux4_1:inst10|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst10                           ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst10|mux2_1:inst               ; work         ;
+;          |mux4_1:inst11|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst11                           ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst11|mux2_1:inst               ; work         ;
+;          |mux4_1:inst12|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst12                           ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst12|mux2_1:inst               ; work         ;
+;          |mux4_1:inst13|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst13                           ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst13|mux2_1:inst               ; work         ;
+;          |mux4_1:inst14|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst14                           ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst14|mux2_1:inst               ; work         ;
+;          |mux4_1:inst16|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst16                           ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst16|mux2_1:inst               ; work         ;
+;          |mux4_1:inst5|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst5                            ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst5|mux2_1:inst                ; work         ;
+;          |mux4_1:inst6|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst6                            ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst6|mux2_1:inst                ; work         ;
+;          |mux4_1:inst7|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst7                            ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst7|mux2_1:inst                ; work         ;
+;          |mux4_1:inst8|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst8                            ; work         ;
+;             |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|LU:inst1|mux4_1:inst8|mux2_1:inst                ; work         ;
+;       |mux2_1_8bit:ie|            ; 83 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie                                   ; work         ;
+;          |mux2_1:inst15|          ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst15                     ; work         ;
+;          |mux2_1:inst16|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst16                     ; work         ;
+;          |mux2_1:inst17|          ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst17                     ; work         ;
+;          |mux2_1:inst18|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst18                     ; work         ;
+;          |mux2_1:inst19|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst19                     ; work         ;
+;          |mux2_1:inst20|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst20                     ; work         ;
+;          |mux2_1:inst21|          ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst21                     ; work         ;
+;          |mux2_1:inst22|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst22                     ; work         ;
+;          |mux2_1:inst23|          ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst23                     ; work         ;
+;          |mux2_1:inst24|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst24                     ; work         ;
+;          |mux2_1:inst25|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst25                     ; work         ;
+;          |mux2_1:inst26|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst26                     ; work         ;
+;          |mux2_1:inst27|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst27                     ; work         ;
+;          |mux2_1:inst28|          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst28                     ; work         ;
+;          |mux2_1:inst29|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst29                     ; work         ;
+;          |mux2_1:ka|              ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:ka                         ; work         ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -220,6 +337,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 7:1                ; 15 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |mach_cuoi|ALU:inst|mux2_1_8bit:ie|mux2_1:inst23|inst3 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -235,7 +361,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 23 10:41:28 2026
+    Info: Processing started: Fri Oct 23 17:20:03 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lab3.bdf
@@ -270,18 +396,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file au.bdf
     Info (12023): Found entity 1: AU
 Info (12021): Found 1 design units, including 1 entities, in source file mux4_1.bdf
     Info (12023): Found entity 1: mux4_1
-Info (12127): Elaborating entity "mux4_1" for the top level hierarchy
-Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:inst2"
+Info (12021): Found 1 design units, including 1 entities, in source file lu.bdf
+    Info (12023): Found entity 1: LU
+Info (12021): Found 1 design units, including 1 entities, in source file alu.bdf
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_8bit.bdf
+    Info (12023): Found entity 1: mux2_1_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file mach_cuoi.bdf
+    Info (12023): Found entity 1: mach_cuoi
+Info (12127): Elaborating entity "mach_cuoi" for the top level hierarchy
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst"
+Info (12128): Elaborating entity "mux2_1_8bit" for hierarchy "ALU:inst|mux2_1_8bit:ie"
+Info (12128): Elaborating entity "mux2_1" for hierarchy "ALU:inst|mux2_1_8bit:ie|mux2_1:inst23"
+Info (12128): Elaborating entity "AU" for hierarchy "ALU:inst|AU:inst"
+Info (12128): Elaborating entity "full_adder_16bit" for hierarchy "ALU:inst|AU:inst|full_adder_16bit:inst1"
+Info (12128): Elaborating entity "full_adder" for hierarchy "ALU:inst|AU:inst|full_adder_16bit:inst1|full_adder:inst"
+Info (12128): Elaborating entity "full_sub_16bit" for hierarchy "ALU:inst|AU:inst|full_sub_16bit:inst"
+Info (12128): Elaborating entity "sub_adder" for hierarchy "ALU:inst|AU:inst|full_sub_16bit:inst|sub_adder:inst"
+Info (12128): Elaborating entity "LU" for hierarchy "ALU:inst|LU:inst1"
+Info (12128): Elaborating entity "mux4_1" for hierarchy "ALU:inst|LU:inst1|mux4_1:Ka"
+Info (12128): Elaborating entity "AND_16bit" for hierarchy "ALU:inst|LU:inst1|AND_16bit:inst"
+Info (12128): Elaborating entity "AND_4bit" for hierarchy "ALU:inst|LU:inst1|AND_16bit:inst|AND_4bit:inst"
+Info (12128): Elaborating entity "OR_16bit" for hierarchy "ALU:inst|LU:inst1|OR_16bit:inst3"
+Info (12128): Elaborating entity "OR_4bit" for hierarchy "ALU:inst|LU:inst1|OR_16bit:inst3|OR_4bit:inst"
+Info (12128): Elaborating entity "NAND_16bit" for hierarchy "ALU:inst|LU:inst1|NAND_16bit:inst2"
+Info (12128): Elaborating entity "NAND_4bit" for hierarchy "ALU:inst|LU:inst1|NAND_16bit:inst2|NAND_4bit:inst"
+Info (12128): Elaborating entity "XOR_16bit" for hierarchy "ALU:inst|LU:inst1|XOR_16bit:inst4"
+Info (12128): Elaborating entity "XOR_4bit" for hierarchy "ALU:inst|LU:inst1|XOR_16bit:inst4|XOR_4bit:inst"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 2 logic cells
+Info (21057): Implemented 229 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 35 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 178 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Fri Oct 23 10:41:29 2026
+    Info: Peak virtual memory: 4595 megabytes
+    Info: Processing ended: Fri Oct 23 17:20:04 2026
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
