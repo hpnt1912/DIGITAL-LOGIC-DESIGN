@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LAB3
-Thu Oct 22 21:36:23 2026
+Fri Oct 23 09:02:35 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 22 21:36:23 2026           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 23 09:02:35 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LAB3                                            ;
-; Top-level Entity Name              ; nhan                                            ;
+; Top-level Entity Name              ; hien_thi                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 33                                              ;
-;     Total combinational functions  ; 33                                              ;
+; Total logic elements               ; 90                                              ;
+;     Total combinational functions  ; 90                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 16                                              ;
+; Total pins                         ; 72                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; nhan               ; LAB3               ;
+; Top-level entity name                                                      ; hien_thi           ; LAB3               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -159,6 +159,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; seg7.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/seg7.bdf            ;         ;
+; hien_thi.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/hien_thi.bdf        ;         ;
+; bcd8.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/bcd8.bdf            ;         ;
+; bcd4.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/bcd4.bdf            ;         ;
+; add3.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/add3.bdf            ;         ;
 ; InA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/InA.bdf             ;         ;
 ; mux2_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/mux2_1.bdf          ;         ;
 ; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/lab3/full_adder.bdf      ;         ;
@@ -176,65 +181,83 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 33    ;
+; Estimated Total logic elements              ; 90    ;
 ;                                             ;       ;
-; Total combinational functions               ; 33    ;
+; Total combinational functions               ; 90    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 21    ;
-;     -- 3 input functions                    ; 3     ;
-;     -- <=2 input functions                  ; 9     ;
+;     -- 4 input functions                    ; 70    ;
+;     -- 3 input functions                    ; 10    ;
+;     -- <=2 input functions                  ; 10    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 33    ;
+;     -- normal mode                          ; 90    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 16    ;
+; I/O pins                                    ; 72    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; B[1]  ;
-; Maximum fan-out                             ; 9     ;
-; Total fan-out                               ; 119   ;
-; Average fan-out                             ; 2.43  ;
+; Maximum fan-out node                        ; SW[4] ;
+; Maximum fan-out                             ; 19    ;
+; Total fan-out                               ; 380   ;
+; Average fan-out                             ; 2.35  ;
 +---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+--------------+
-; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+--------------+
-; |nhan                       ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |nhan                                          ; work         ;
-;    |full_adder_8bit:inst18| ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst18                   ; work         ;
-;       |full_adder:inst10|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst18|full_adder:inst10 ; work         ;
-;       |full_adder:inst11|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst18|full_adder:inst11 ; work         ;
-;       |full_adder:inst9|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst18|full_adder:inst9  ; work         ;
-;    |full_adder_8bit:inst19| ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst19                   ; work         ;
-;       |full_adder:inst10|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst19|full_adder:inst10 ; work         ;
-;       |full_adder:inst8|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst19|full_adder:inst8  ; work         ;
-;       |full_adder:inst9|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst19|full_adder:inst9  ; work         ;
-;       |full_adder:inst|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst19|full_adder:inst   ; work         ;
-;    |full_adder_8bit:inst21| ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst21                   ; work         ;
-;       |full_adder:inst13|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst21|full_adder:inst13 ; work         ;
-;       |full_adder:inst8|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst21|full_adder:inst8  ; work         ;
-;       |full_adder:inst9|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst21|full_adder:inst9  ; work         ;
-;       |full_adder:inst|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|full_adder_8bit:inst21|full_adder:inst   ; work         ;
-;    |mux2_1_8bit:inst22|     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst22                       ; work         ;
-;       |mux2_1:inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst22|mux2_1:inst1          ; work         ;
-;       |mux2_1:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst22|mux2_1:inst2          ; work         ;
-;       |mux2_1:inst3|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst22|mux2_1:inst3          ; work         ;
-;    |mux2_1_8bit:inst23|     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst23                       ; work         ;
-;       |mux2_1:inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst23|mux2_1:inst1          ; work         ;
-;       |mux2_1:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst23|mux2_1:inst2          ; work         ;
-;       |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst23|mux2_1:inst           ; work         ;
-;    |mux2_1_8bit:inst24|     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst24                       ; work         ;
-;       |mux2_1:inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst24|mux2_1:inst1          ; work         ;
-;       |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst24|mux2_1:inst           ; work         ;
-;    |mux2_1_8bit:inst|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst                         ; work         ;
-;       |mux2_1:inst7|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nhan|mux2_1_8bit:inst|mux2_1:inst7            ; work         ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
+; |hien_thi                      ; 90 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |hien_thi                                                    ; work         ;
+;    |bcd4:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd4:inst2                                         ; work         ;
+;       |add3:inst1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd4:inst2|add3:inst1                              ; work         ;
+;    |bcd4:inst3|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd4:inst3                                         ; work         ;
+;       |add3:inst1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd4:inst3|add3:inst1                              ; work         ;
+;    |bcd8:inst4|                ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4                                         ; work         ;
+;       |add3:inst1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4|add3:inst1                              ; work         ;
+;       |add3:inst2|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4|add3:inst2                              ; work         ;
+;       |add3:inst3|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4|add3:inst3                              ; work         ;
+;       |add3:inst4|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4|add3:inst4                              ; work         ;
+;       |add3:inst5|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4|add3:inst5                              ; work         ;
+;       |add3:inst6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4|add3:inst6                              ; work         ;
+;       |add3:inst7|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|bcd8:inst4|add3:inst7                              ; work         ;
+;    |nhan:inst|                 ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst                                          ; work         ;
+;       |full_adder_8bit:inst18| ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst18                   ; work         ;
+;          |full_adder:inst10|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst10 ; work         ;
+;          |full_adder:inst11|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst11 ; work         ;
+;          |full_adder:inst9|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst9  ; work         ;
+;       |full_adder_8bit:inst19| ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst19                   ; work         ;
+;          |full_adder:inst10|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst10 ; work         ;
+;          |full_adder:inst8|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst8  ; work         ;
+;          |full_adder:inst9|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst9  ; work         ;
+;          |full_adder:inst|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst   ; work         ;
+;       |full_adder_8bit:inst21| ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst21                   ; work         ;
+;          |full_adder:inst13|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst13 ; work         ;
+;          |full_adder:inst8|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst8  ; work         ;
+;          |full_adder:inst9|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst9  ; work         ;
+;          |full_adder:inst|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst   ; work         ;
+;       |mux2_1_8bit:inst22|     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst22                       ; work         ;
+;          |mux2_1:inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst1          ; work         ;
+;          |mux2_1:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst2          ; work         ;
+;          |mux2_1:inst3|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst3          ; work         ;
+;       |mux2_1_8bit:inst23|     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst23                       ; work         ;
+;          |mux2_1:inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst1          ; work         ;
+;          |mux2_1:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst2          ; work         ;
+;          |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst           ; work         ;
+;       |mux2_1_8bit:inst24|     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst24                       ; work         ;
+;          |mux2_1:inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst1          ; work         ;
+;          |mux2_1:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst           ; work         ;
+;       |mux2_1_8bit:inst|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst                         ; work         ;
+;          |mux2_1:inst7|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst7            ; work         ;
+;    |seg7:inst10|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|seg7:inst10                                        ; work         ;
+;    |seg7:inst11|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|seg7:inst11                                        ; work         ;
+;    |seg7:inst6|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|seg7:inst6                                         ; work         ;
+;    |seg7:inst8|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|seg7:inst8                                         ; work         ;
+;    |seg7:inst9|                ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hien_thi|seg7:inst9                                         ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -268,9 +291,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 22 21:36:22 2026
+    Info: Processing started: Fri Oct 23 09:02:33 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB3 -c LAB3
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file seg7.bdf
+    Info (12023): Found entity 1: seg7
+Info (12021): Found 1 design units, including 1 entities, in source file hien_thi.bdf
+    Info (12023): Found entity 1: hien_thi
+Info (12021): Found 1 design units, including 1 entities, in source file bcd8.bdf
+    Info (12023): Found entity 1: bcd8
+Info (12021): Found 1 design units, including 1 entities, in source file bcd4.bdf
+    Info (12023): Found entity 1: bcd4
+Info (12021): Found 1 design units, including 1 entities, in source file add3.bdf
+    Info (12023): Found entity 1: add3
 Info (12021): Found 1 design units, including 1 entities, in source file lab3.bdf
     Info (12023): Found entity 1: LAB3
 Info (12021): Found 1 design units, including 1 entities, in source file ina.bdf
@@ -291,7 +324,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_
     Info (12023): Found entity 1: mux2_1_8bit
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder_8bit.bdf
     Info (12023): Found entity 1: full_adder_8bit
-Info (12127): Elaborating entity "nhan" for the top level hierarchy
+Info (12127): Elaborating entity "hien_thi" for the top level hierarchy
+Info (12128): Elaborating entity "seg7" for hierarchy "seg7:inst11"
+Info (12128): Elaborating entity "bcd8" for hierarchy "bcd8:inst4"
+Info (12128): Elaborating entity "add3" for hierarchy "bcd8:inst4|add3:inst6"
+Info (12128): Elaborating entity "nhan" for hierarchy "nhan:inst"
 Warning (275083): Bus "A_Out1[7..0]" found using same base name as "A_Out", which might lead to a name conflict.
 Warning (275083): Bus "A_Out1[7]" found using same base name as "A_Out", which might lead to a name conflict.
 Warning (275083): Bus "A_Out1[6]" found using same base name as "A_Out", which might lead to a name conflict.
@@ -359,24 +396,40 @@ Warning (275080): Converted elements in bus name "A_Out3" using legacy naming ru
     Warning (275081): Converted element name(s) from "A_Out3[1]" to "A_Out31"
     Warning (275081): Converted element name(s) from "A_Out3[0]" to "A_Out30"
     Warning (275081): Converted element name(s) from "A_Out3[7..0]" to "A_Out37..0"
-Info (12128): Elaborating entity "full_adder_8bit" for hierarchy "full_adder_8bit:inst21"
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder_8bit:inst21|full_adder:inst14"
-Info (12128): Elaborating entity "mux2_1_8bit" for hierarchy "mux2_1_8bit:inst24"
-Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1_8bit:inst24|mux2_1:inst5"
-Info (12128): Elaborating entity "shift_left_3" for hierarchy "shift_left_3:inst9"
-Info (12128): Elaborating entity "InA" for hierarchy "shift_left_3:inst9|InA:inst"
-Info (12128): Elaborating entity "shift_left_2" for hierarchy "shift_left_2:inst7"
-Info (12128): Elaborating entity "shift_left_1" for hierarchy "shift_left_1:inst6"
+Info (12128): Elaborating entity "full_adder_8bit" for hierarchy "nhan:inst|full_adder_8bit:inst21"
+Info (12128): Elaborating entity "full_adder" for hierarchy "nhan:inst|full_adder_8bit:inst21|full_adder:inst14"
+Info (12128): Elaborating entity "mux2_1_8bit" for hierarchy "nhan:inst|mux2_1_8bit:inst24"
+Info (12128): Elaborating entity "mux2_1" for hierarchy "nhan:inst|mux2_1_8bit:inst24|mux2_1:inst5"
+Info (12128): Elaborating entity "shift_left_3" for hierarchy "nhan:inst|shift_left_3:inst9"
+Info (12128): Elaborating entity "InA" for hierarchy "nhan:inst|shift_left_3:inst9|InA:inst"
+Info (12128): Elaborating entity "shift_left_2" for hierarchy "nhan:inst|shift_left_2:inst7"
+Info (12128): Elaborating entity "shift_left_1" for hierarchy "nhan:inst|shift_left_1:inst6"
+Info (12128): Elaborating entity "bcd4" for hierarchy "bcd4:inst3"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX2[1]" is stuck at GND
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC
+    Warning (13410): Pin "HEX5[2]" is stuck at GND
+    Warning (13410): Pin "HEX5[1]" is stuck at GND
+    Warning (13410): Pin "HEX7[6]" is stuck at VCC
+    Warning (13410): Pin "HEX7[2]" is stuck at GND
+    Warning (13410): Pin "HEX7[1]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 162 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 33 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4595 megabytes
-    Info: Processing ended: Thu Oct 22 21:36:23 2026
-    Info: Elapsed time: 00:00:01
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 90 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 83 warnings
+    Info: Peak virtual memory: 4594 megabytes
+    Info: Processing ended: Fri Oct 23 09:02:35 2026
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

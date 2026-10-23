@@ -1,4 +1,320 @@
-|nhan
+|hien_thi
+HEX0[0] <= seg7:inst11.SA
+HEX0[1] <= seg7:inst11.SB
+HEX0[2] <= seg7:inst11.SC
+HEX0[3] <= seg7:inst11.SD
+HEX0[4] <= seg7:inst11.SE
+HEX0[5] <= seg7:inst11.SF
+HEX0[6] <= seg7:inst11.SG
+LEDR[0] <= nhan:inst.Tich[0]
+LEDR[1] <= nhan:inst.Tich[1]
+LEDR[2] <= nhan:inst.Tich[2]
+LEDR[3] <= nhan:inst.Tich[3]
+LEDR[4] <= nhan:inst.Tich[4]
+LEDR[5] <= nhan:inst.Tich[5]
+LEDR[6] <= nhan:inst.Tich[6]
+LEDR[7] <= nhan:inst.Tich[7]
+SW[0] => nhan:inst.A[0]
+SW[0] => bcd4:inst2.N0
+SW[1] => nhan:inst.A[1]
+SW[1] => bcd4:inst2.N1
+SW[2] => nhan:inst.A[2]
+SW[2] => bcd4:inst2.N2
+SW[3] => nhan:inst.A[3]
+SW[3] => bcd4:inst2.N3
+SW[4] => nhan:inst.B[0]
+SW[4] => bcd4:inst3.N0
+SW[5] => nhan:inst.B[1]
+SW[5] => bcd4:inst3.N1
+SW[6] => nhan:inst.B[2]
+SW[6] => bcd4:inst3.N2
+SW[7] => nhan:inst.B[3]
+SW[7] => bcd4:inst3.N3
+HEX1[0] <= seg7:inst10.SA
+HEX1[1] <= seg7:inst10.SB
+HEX1[2] <= seg7:inst10.SC
+HEX1[3] <= seg7:inst10.SD
+HEX1[4] <= seg7:inst10.SE
+HEX1[5] <= seg7:inst10.SF
+HEX1[6] <= seg7:inst10.SG
+HEX2[0] <= seg7:inst9.SA
+HEX2[1] <= seg7:inst9.SB
+HEX2[2] <= seg7:inst9.SC
+HEX2[3] <= seg7:inst9.SD
+HEX2[4] <= seg7:inst9.SE
+HEX2[5] <= seg7:inst9.SF
+HEX2[6] <= seg7:inst9.SG
+HEX3[0] <= <VCC>
+HEX3[1] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[3] <= <VCC>
+HEX3[4] <= <VCC>
+HEX3[5] <= <VCC>
+HEX3[6] <= <VCC>
+HEX4[0] <= seg7:inst8.SA
+HEX4[1] <= seg7:inst8.SB
+HEX4[2] <= seg7:inst8.SC
+HEX4[3] <= seg7:inst8.SD
+HEX4[4] <= seg7:inst8.SE
+HEX4[5] <= seg7:inst8.SF
+HEX4[6] <= seg7:inst8.SG
+HEX5[0] <= seg7:inst7.SA
+HEX5[1] <= seg7:inst7.SB
+HEX5[2] <= seg7:inst7.SC
+HEX5[3] <= seg7:inst7.SD
+HEX5[4] <= seg7:inst7.SE
+HEX5[5] <= seg7:inst7.SF
+HEX5[6] <= seg7:inst7.SG
+HEX6[0] <= seg7:inst6.SA
+HEX6[1] <= seg7:inst6.SB
+HEX6[2] <= seg7:inst6.SC
+HEX6[3] <= seg7:inst6.SD
+HEX6[4] <= seg7:inst6.SE
+HEX6[5] <= seg7:inst6.SF
+HEX6[6] <= seg7:inst6.SG
+HEX7[0] <= seg7:inst5.SA
+HEX7[1] <= seg7:inst5.SB
+HEX7[2] <= seg7:inst5.SC
+HEX7[3] <= seg7:inst5.SD
+HEX7[4] <= seg7:inst5.SE
+HEX7[5] <= seg7:inst5.SF
+HEX7[6] <= seg7:inst5.SG
+
+
+|hien_thi|seg7:inst11
+SA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C => inst6.IN0
+C => inst1.IN0
+C => inst9.IN0
+C => inst8.IN0
+C => inst7.IN0
+C => inst10.IN0
+B => inst2.IN0
+B => inst9.IN1
+B => inst14.IN1
+B => inst7.IN1
+B => inst12.IN1
+B => inst13.IN0
+A => inst3.IN0
+A => inst5.IN1
+A => inst8.IN2
+A => inst7.IN2
+A => inst18.IN1
+A => inst13.IN1
+A => inst11.IN2
+D => inst.IN0
+SB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+SC <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd8:inst4
+TR1 <= add3:inst6.S3
+B7 => add3:inst1.A2
+B6 => add3:inst1.A1
+B5 => add3:inst1.A0
+B4 => add3:inst2.A0
+B3 => add3:inst3.A0
+TR0 <= add3:inst7.S3
+B2 => add3:inst4.A0
+CH3 <= add3:inst7.S2
+CH2 <= add3:inst7.S1
+CH1 <= add3:inst7.S0
+CH0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+B1 => add3:inst5.A0
+DV3 <= add3:inst5.S2
+DV2 <= add3:inst5.S1
+DV1 <= add3:inst5.S0
+DV0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+B0 => inst8.IN1
+
+
+|hien_thi|bcd8:inst4|add3:inst6
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd8:inst4|add3:inst1
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd8:inst4|add3:inst2
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd8:inst4|add3:inst3
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd8:inst4|add3:inst7
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd8:inst4|add3:inst4
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd8:inst4|add3:inst5
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|nhan:inst
 Tich[0] <= full_adder_8bit:inst21.S[0]
 Tich[1] <= full_adder_8bit:inst21.S[1]
 Tich[2] <= full_adder_8bit:inst21.S[2]
@@ -29,7 +345,7 @@ A[3] => shift_left_1:inst6.A[3]
 A[3] => InA:inst4.A[3]
 
 
-|nhan|full_adder_8bit:inst21
+|hien_thi|nhan:inst|full_adder_8bit:inst21
 Cout <= full_adder:inst14.Cout
 A[0] => full_adder:inst12.A
 A[1] => full_adder:inst11.A
@@ -57,7 +373,7 @@ S[6] <= full_adder:inst13.S
 S[7] <= full_adder:inst14.S
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst14
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst14
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -71,7 +387,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst13
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst13
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -85,7 +401,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -99,7 +415,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst8
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst8
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -113,7 +429,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst9
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst9
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -127,7 +443,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst10
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst10
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -141,7 +457,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst11
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst11
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -155,7 +471,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst21|full_adder:inst12
+|hien_thi|nhan:inst|full_adder_8bit:inst21|full_adder:inst12
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -169,7 +485,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|mux2_1_8bit:inst24
+|hien_thi|nhan:inst|mux2_1_8bit:inst24
 Y[0] <= mux2_1:inst7.Y
 Y[1] <= mux2_1:inst6.Y
 Y[2] <= mux2_1:inst3.Y
@@ -204,7 +520,7 @@ S => mux2_1:inst6.S
 S => mux2_1:inst7.S
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst5
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst5
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -212,7 +528,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst4
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst4
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -220,7 +536,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -228,7 +544,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst1
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst1
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -236,7 +552,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst2
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst2
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -244,7 +560,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst3
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst3
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -252,7 +568,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst6
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst6
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -260,7 +576,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst24|mux2_1:inst7
+|hien_thi|nhan:inst|mux2_1_8bit:inst24|mux2_1:inst7
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -268,7 +584,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|shift_left_3:inst9
+|hien_thi|nhan:inst|shift_left_3:inst9
 A_Out[0] <= <GND>
 A_Out[1] <= <GND>
 A_Out[2] <= <GND>
@@ -283,7 +599,7 @@ A[2] => InA:inst.A[2]
 A[3] => InA:inst.A[3]
 
 
-|nhan|shift_left_3:inst9|InA:inst
+|hien_thi|nhan:inst|shift_left_3:inst9|InA:inst
 A_Out[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -298,7 +614,7 @@ A[2] => A_Out[2].DATAIN
 A[3] => A_Out[3].DATAIN
 
 
-|nhan|full_adder_8bit:inst19
+|hien_thi|nhan:inst|full_adder_8bit:inst19
 Cout <= full_adder:inst14.Cout
 A[0] => full_adder:inst12.A
 A[1] => full_adder:inst11.A
@@ -326,7 +642,7 @@ S[6] <= full_adder:inst13.S
 S[7] <= full_adder:inst14.S
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst14
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst14
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -340,7 +656,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst13
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst13
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -354,7 +670,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -368,7 +684,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst8
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst8
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -382,7 +698,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst9
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst9
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -396,7 +712,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst10
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst10
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -410,7 +726,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst11
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst11
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -424,7 +740,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst19|full_adder:inst12
+|hien_thi|nhan:inst|full_adder_8bit:inst19|full_adder:inst12
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -438,7 +754,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|mux2_1_8bit:inst23
+|hien_thi|nhan:inst|mux2_1_8bit:inst23
 Y[0] <= mux2_1:inst7.Y
 Y[1] <= mux2_1:inst6.Y
 Y[2] <= mux2_1:inst3.Y
@@ -473,7 +789,7 @@ S => mux2_1:inst6.S
 S => mux2_1:inst7.S
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst5
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst5
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -481,7 +797,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst4
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst4
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -489,7 +805,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -497,7 +813,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst1
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst1
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -505,7 +821,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst2
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst2
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -513,7 +829,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst3
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst3
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -521,7 +837,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst6
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst6
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -529,7 +845,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst23|mux2_1:inst7
+|hien_thi|nhan:inst|mux2_1_8bit:inst23|mux2_1:inst7
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -537,7 +853,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|shift_left_2:inst7
+|hien_thi|nhan:inst|shift_left_2:inst7
 A_Out[0] <= <GND>
 A_Out[1] <= <GND>
 A_Out[2] <= InA:inst.A_Out[0]
@@ -552,7 +868,7 @@ A[2] => InA:inst.A[2]
 A[3] => InA:inst.A[3]
 
 
-|nhan|shift_left_2:inst7|InA:inst
+|hien_thi|nhan:inst|shift_left_2:inst7|InA:inst
 A_Out[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -567,7 +883,7 @@ A[2] => A_Out[2].DATAIN
 A[3] => A_Out[3].DATAIN
 
 
-|nhan|full_adder_8bit:inst18
+|hien_thi|nhan:inst|full_adder_8bit:inst18
 Cout <= full_adder:inst14.Cout
 A[0] => full_adder:inst12.A
 A[1] => full_adder:inst11.A
@@ -595,7 +911,7 @@ S[6] <= full_adder:inst13.S
 S[7] <= full_adder:inst14.S
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst14
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst14
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -609,7 +925,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst13
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst13
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -623,7 +939,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -637,7 +953,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst8
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst8
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -651,7 +967,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst9
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst9
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -665,7 +981,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst10
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst10
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -679,7 +995,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst11
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst11
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -693,7 +1009,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|full_adder_8bit:inst18|full_adder:inst12
+|hien_thi|nhan:inst|full_adder_8bit:inst18|full_adder:inst12
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0
@@ -707,7 +1023,7 @@ Cin => inst5.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nhan|mux2_1_8bit:inst22
+|hien_thi|nhan:inst|mux2_1_8bit:inst22
 Y[0] <= mux2_1:inst7.Y
 Y[1] <= mux2_1:inst6.Y
 Y[2] <= mux2_1:inst3.Y
@@ -742,7 +1058,7 @@ S => mux2_1:inst6.S
 S => mux2_1:inst7.S
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst5
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst5
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -750,7 +1066,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst4
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst4
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -758,7 +1074,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -766,7 +1082,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst1
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst1
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -774,7 +1090,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst2
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst2
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -782,7 +1098,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst3
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst3
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -790,7 +1106,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst6
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst6
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -798,7 +1114,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst22|mux2_1:inst7
+|hien_thi|nhan:inst|mux2_1_8bit:inst22|mux2_1:inst7
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -806,7 +1122,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|shift_left_1:inst6
+|hien_thi|nhan:inst|shift_left_1:inst6
 A_Out[0] <= <GND>
 A_Out[1] <= InA:inst.A_Out[0]
 A_Out[2] <= InA:inst.A_Out[1]
@@ -821,7 +1137,7 @@ A[2] => InA:inst.A[2]
 A[3] => InA:inst.A[3]
 
 
-|nhan|shift_left_1:inst6|InA:inst
+|hien_thi|nhan:inst|shift_left_1:inst6|InA:inst
 A_Out[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -836,7 +1152,7 @@ A[2] => A_Out[2].DATAIN
 A[3] => A_Out[3].DATAIN
 
 
-|nhan|mux2_1_8bit:inst
+|hien_thi|nhan:inst|mux2_1_8bit:inst
 Y[0] <= mux2_1:inst7.Y
 Y[1] <= mux2_1:inst6.Y
 Y[2] <= mux2_1:inst3.Y
@@ -871,7 +1187,7 @@ S => mux2_1:inst6.S
 S => mux2_1:inst7.S
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst5
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst5
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -879,7 +1195,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst4
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst4
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -887,7 +1203,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -895,7 +1211,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst1
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst1
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -903,7 +1219,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst2
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst2
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -911,7 +1227,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst3
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst3
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -919,7 +1235,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst6
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst6
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -927,7 +1243,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|mux2_1_8bit:inst|mux2_1:inst7
+|hien_thi|nhan:inst|mux2_1_8bit:inst|mux2_1:inst7
 Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 I1 => inst1.IN0
 S => inst.IN0
@@ -935,7 +1251,7 @@ S => inst2.IN0
 I0 => inst2.IN1
 
 
-|nhan|InA:inst4
+|hien_thi|nhan:inst|InA:inst4
 A_Out[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 A_Out[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -948,5 +1264,261 @@ A[0] => A_Out[0].DATAIN
 A[1] => A_Out[1].DATAIN
 A[2] => A_Out[2].DATAIN
 A[3] => A_Out[3].DATAIN
+
+
+|hien_thi|seg7:inst10
+SA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C => inst6.IN0
+C => inst1.IN0
+C => inst9.IN0
+C => inst8.IN0
+C => inst7.IN0
+C => inst10.IN0
+B => inst2.IN0
+B => inst9.IN1
+B => inst14.IN1
+B => inst7.IN1
+B => inst12.IN1
+B => inst13.IN0
+A => inst3.IN0
+A => inst5.IN1
+A => inst8.IN2
+A => inst7.IN2
+A => inst18.IN1
+A => inst13.IN1
+A => inst11.IN2
+D => inst.IN0
+SB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+SC <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|seg7:inst9
+SA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C => inst6.IN0
+C => inst1.IN0
+C => inst9.IN0
+C => inst8.IN0
+C => inst7.IN0
+C => inst10.IN0
+B => inst2.IN0
+B => inst9.IN1
+B => inst14.IN1
+B => inst7.IN1
+B => inst12.IN1
+B => inst13.IN0
+A => inst3.IN0
+A => inst5.IN1
+A => inst8.IN2
+A => inst7.IN2
+A => inst18.IN1
+A => inst13.IN1
+A => inst11.IN2
+D => inst.IN0
+SB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+SC <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|seg7:inst8
+SA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C => inst6.IN0
+C => inst1.IN0
+C => inst9.IN0
+C => inst8.IN0
+C => inst7.IN0
+C => inst10.IN0
+B => inst2.IN0
+B => inst9.IN1
+B => inst14.IN1
+B => inst7.IN1
+B => inst12.IN1
+B => inst13.IN0
+A => inst3.IN0
+A => inst5.IN1
+A => inst8.IN2
+A => inst7.IN2
+A => inst18.IN1
+A => inst13.IN1
+A => inst11.IN2
+D => inst.IN0
+SB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+SC <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd4:inst3
+CH <= add3:inst1.S3
+N3 => add3:inst1.A2
+N2 => add3:inst1.A1
+N1 => add3:inst1.A0
+DV3 <= add3:inst1.S2
+DV2 <= add3:inst1.S1
+DV1 <= add3:inst1.S0
+DV0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+N0 => inst2.IN1
+
+
+|hien_thi|bcd4:inst3|add3:inst1
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|seg7:inst7
+SA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C => inst6.IN0
+C => inst1.IN0
+C => inst9.IN0
+C => inst8.IN0
+C => inst7.IN0
+C => inst10.IN0
+B => inst2.IN0
+B => inst9.IN1
+B => inst14.IN1
+B => inst7.IN1
+B => inst12.IN1
+B => inst13.IN0
+A => inst3.IN0
+A => inst5.IN1
+A => inst8.IN2
+A => inst7.IN2
+A => inst18.IN1
+A => inst13.IN1
+A => inst11.IN2
+D => inst.IN0
+SB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+SC <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|seg7:inst6
+SA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C => inst6.IN0
+C => inst1.IN0
+C => inst9.IN0
+C => inst8.IN0
+C => inst7.IN0
+C => inst10.IN0
+B => inst2.IN0
+B => inst9.IN1
+B => inst14.IN1
+B => inst7.IN1
+B => inst12.IN1
+B => inst13.IN0
+A => inst3.IN0
+A => inst5.IN1
+A => inst8.IN2
+A => inst7.IN2
+A => inst18.IN1
+A => inst13.IN1
+A => inst11.IN2
+D => inst.IN0
+SB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+SC <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|bcd4:inst2
+CH <= add3:inst1.S3
+N3 => add3:inst1.A2
+N2 => add3:inst1.A1
+N1 => add3:inst1.A0
+DV3 <= add3:inst1.S2
+DV2 <= add3:inst1.S1
+DV1 <= add3:inst1.S0
+DV0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+N0 => inst2.IN1
+
+
+|hien_thi|bcd4:inst2|add3:inst1
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst4.IN0
+A2 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst1.IN0
+A2 => inst15.IN0
+A0 => inst4.IN1
+A0 => inst8.IN1
+A0 => inst3.IN0
+A0 => inst11.IN1
+A0 => inst14.IN2
+A1 => inst5.IN1
+A1 => inst2.IN0
+A1 => inst11.IN0
+A1 => inst10.IN1
+A1 => inst15.IN1
+A3 => inst6.IN2
+A3 => inst8.IN0
+A3 => inst12.IN0
+A3 => inst.IN0
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hien_thi|seg7:inst5
+SA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C => inst6.IN0
+C => inst1.IN0
+C => inst9.IN0
+C => inst8.IN0
+C => inst7.IN0
+C => inst10.IN0
+B => inst2.IN0
+B => inst9.IN1
+B => inst14.IN1
+B => inst7.IN1
+B => inst12.IN1
+B => inst13.IN0
+A => inst3.IN0
+A => inst5.IN1
+A => inst8.IN2
+A => inst7.IN2
+A => inst18.IN1
+A => inst13.IN1
+A => inst11.IN2
+D => inst.IN0
+SB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+SC <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 
 
