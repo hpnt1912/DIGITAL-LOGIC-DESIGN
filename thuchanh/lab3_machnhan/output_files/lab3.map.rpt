@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Wed Oct 28 12:08:18 2026
+Thu Nov 05 15:11:34 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 28 12:08:18 2026           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 05 15:11:34 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lab3                                            ;
 ; Top-level Entity Name              ; nhan                                            ;
@@ -268,7 +268,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 28 12:08:17 2026
+    Info: Processing started: Thu Nov 05 15:11:33 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file nhan.bdf
@@ -291,6 +291,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file full_ad
     Info (12023): Found entity 1: full_adder
 Info (12021): Found 1 design units, including 1 entities, in source file lab3.bdf
     Info (12023): Found entity 1: lab3
+Info (12021): Found 1 design units, including 1 entities, in source file full_sub.bdf
+    Info (12023): Found entity 1: full_sub
+Info (12021): Found 1 design units, including 1 entities, in source file full_sub_16bit.bdf
+    Info (12023): Found entity 1: full_sub_16bit
+Info (12021): Found 1 design units, including 1 entities, in source file r.bdf
+    Info (12023): Found entity 1: R
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_16bit.bdf
+    Info (12023): Found entity 1: mux2_1_16bit
+Info (12021): Found 1 design units, including 1 entities, in source file mach_chia_1.bdf
+    Info (12023): Found entity 1: mach_chia_1
+Info (12021): Found 1 design units, including 1 entities, in source file mach_chia_cuoi.bdf
+    Info (12023): Found entity 1: mach_chia_cuoi
+Info (12021): Found 1 design units, including 1 entities, in source file bcd4.bdf
+    Info (12023): Found entity 1: bcd4
+Info (12021): Found 1 design units, including 1 entities, in source file hien_thi_led.bdf
+    Info (12023): Found entity 1: hien_thi_led
 Info (12127): Elaborating entity "nhan" for the top level hierarchy
 Warning (275083): Bus "A_Out1[7..0]" found using same base name as "A_Out", which might lead to a name conflict.
 Warning (275083): Bus "A_Out1[7]" found using same base name as "A_Out", which might lead to a name conflict.
@@ -374,8 +390,8 @@ Info (21057): Implemented 49 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 33 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4590 megabytes
-    Info: Processing ended: Wed Oct 28 12:08:18 2026
+    Info: Peak virtual memory: 4595 megabytes
+    Info: Processing ended: Thu Nov 05 15:11:34 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

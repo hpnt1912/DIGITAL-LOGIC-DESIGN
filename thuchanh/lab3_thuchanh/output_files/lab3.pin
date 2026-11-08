@@ -84,7 +84,7 @@ GND*                         : A14       :        :                   :         
 GND                          : A15       : gnd    :                   :         :           :                
 VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
 Y[12]                        : A17       : output : 3.3-V LVTTL       :         : 4         : N              
-Opcode[0]                    : A18       : input  : 3.3-V LVTTL       :         : 4         : N              
+S0                           : A18       : input  : 3.3-V LVTTL       :         : 4         : N              
 Y[3]                         : A19       : output : 3.3-V LVTTL       :         : 4         : N              
 B[2]                         : A20       : input  : 3.3-V LVTTL       :         : 4         : N              
 B[1]                         : A21       : input  : 3.3-V LVTTL       :         : 4         : N              
@@ -314,7 +314,7 @@ B[15]                        : D13       : input  : 3.3-V LVTTL       :         
 GND*                         : D14       :        :                   :         : 4         :                
 B[12]                        : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
 Y[5]                         : D16       : output : 3.3-V LVTTL       :         : 4         : N              
-Opcode[1]                    : D17       : input  : 3.3-V LVTTL       :         : 4         : N              
+S1                           : D17       : input  : 3.3-V LVTTL       :         : 4         : N              
 Y[6]                         : D18       : output : 3.3-V LVTTL       :         : 4         : N              
 B[8]                         : D19       : input  : 3.3-V LVTTL       :         : 4         : N              
 B[9]                         : D20       : input  : 3.3-V LVTTL       :         : 4         : N              
@@ -393,7 +393,7 @@ GND*                         : G14       :        :                   :         
 A[13]                        : G15       : input  : 3.3-V LVTTL       :         : 4         : N              
 Y[4]                         : G16       : output : 3.3-V LVTTL       :         : 4         : N              
 A[10]                        : G17       : input  : 3.3-V LVTTL       :         : 4         : N              
-Opcode[2]                    : G18       : input  : 3.3-V LVTTL       :         : 4         : N              
+S2                           : G18       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : G20       : gnd    :                   :         :           :                
 GND*                         : G21       :        :                   :         : 5         :                
