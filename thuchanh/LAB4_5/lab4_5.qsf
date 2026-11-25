@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY datapath
+set_global_assignment -name TOP_LEVEL_ENTITY processor
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:59:31  NOVEMBER 23, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -51,7 +51,6 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LAB4_5/shift_left_2.vwf"
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name BDF_FILE mux4_1_16bit.bdf
@@ -77,7 +76,14 @@ set_global_assignment -name BDF_FILE shift.bdf
 set_global_assignment -name BDF_FILE reg_16.bdf
 set_global_assignment -name BDF_FILE mux2_1_16bit.bdf
 set_global_assignment -name BDF_FILE datapath.bdf
+set_global_assignment -name BDF_FILE next_state.bdf
+set_global_assignment -name BDF_FILE output_logic.bdf
+set_global_assignment -name BDF_FILE current_state.bdf
+set_global_assignment -name BDF_FILE control.bdf
+set_global_assignment -name BDF_FILE processor.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE processor.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/github_git/repo/DIGITAL-LOGIC-DESIGN/thuchanh/LAB4_5/processor.vwf"

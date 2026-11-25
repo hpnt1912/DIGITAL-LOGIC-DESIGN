@@ -692,10 +692,6 @@ applicable agreement for further details.
 	(pt 712 408)
 )
 (connector
-	(pt 864 376)
-	(pt 912 376)
-)
-(connector
 	(text "S" (rect 720 520 727 532)(font "Arial" ))
 	(pt 768 536)
 	(pt 712 536)
@@ -1000,4 +996,9 @@ applicable agreement for further details.
 	(pt 952 256)
 	(pt 904 256)
 	(bus)
+)
+(connector
+	(text "Y[15]" (rect 874 360 901 372)(font "Arial" ))
+	(pt 864 376)
+	(pt 912 376)
 )
