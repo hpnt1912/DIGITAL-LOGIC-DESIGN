@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 40 208 56)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[17]" (rect 5 0 41 12)(font "Arial" ))
+	(text "SW[17..0]" (rect 5 0 53 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -52,23 +52,6 @@ applicable agreement for further details.
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect -16 88 40 104))
-)
-(pin
-	(input)
-	(rect 40 104 208 120)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[3..0]" (rect 5 0 48 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -16 120 40 136))
 )
 (pin
 	(output)
@@ -210,7 +193,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1640 2096 1816 2112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LEDG[0]" (rect 90 0 132 12)(font "Arial" ))
+	(text "LEDG[8..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1806,20 +1789,15 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "SW[17]" (rect 212 32 248 44)(font "Arial" ))
+	(text "SW[17..0]" (rect 212 32 260 44)(font "Arial" ))
 	(pt 208 48)
 	(pt 288 48)
+	(bus)
 )
 (connector
 	(text "KEY[1..0]" (rect 212 64 260 76)(font "Arial" ))
 	(pt 208 80)
 	(pt 288 80)
-	(bus)
-)
-(connector
-	(text "SW[3..0]" (rect 212 96 255 108)(font "Arial" ))
-	(pt 208 112)
-	(pt 288 112)
 	(bus)
 )
 (connector
@@ -2300,9 +2278,10 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "LEDG[0]" (rect 1564 2088 1606 2100)(font "Arial" ))
+	(text "LEDG[8..0]" (rect 1564 2088 1617 2100)(font "Arial" ))
 	(pt 1560 2104)
 	(pt 1640 2104)
+	(bus)
 )
 (connector
 	(text "ONE" (rect 1140 240 1166 252)(font "Arial" ))
